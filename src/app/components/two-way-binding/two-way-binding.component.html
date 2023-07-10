@@ -1,0 +1,19 @@
+<div class="class">
+
+ <h2>Two way data bindign</h2>
+  <form>
+
+
+    <input type="text" [(ngModel)]="name"
+    name="name"
+    placeholder="Digite o seu nome"/>
+    <input type="submit" value="Enviar"/>
+  </form>
+ <p>O nome é {{name}}</p>
+  <div *ngIf="name !== '' ">
+    <p>O nome é {{name}}</p>
+
+  </div>
+</div>
+
+
